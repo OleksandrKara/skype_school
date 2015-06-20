@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'skype_school.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'skype_school',
-		'USER': 'root',
-		#'PASSWORD': 'TrustPoint85',
-		'PASSWORD': '1111',
+        'NAME': 'tatuazhkiev',
+		'USER': 'adminzeIIt3Q',
+		'PASSWORD': 'qbG68VDD73FF',
+		#'PASSWORD': '1111',
 		'HOST': 'localhost',
         'PORT': '3306',
     }
