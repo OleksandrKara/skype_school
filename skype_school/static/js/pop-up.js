@@ -6,12 +6,11 @@
 	    return reg.test(name);
 	}
 
-	
+	//become-a-teacher
 	
 	$(document).ready(function() {
-		$(".modalbox").fancybox();
-		$("#contact").submit(function() { return false; });
-
+		$(".become-a-student").fancybox();
+		$("#student-form-contact").submit(function() { return false; });
 		
 		$("#send").on("click", function(){
 			var nameval  = $("#name").val();

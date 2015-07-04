@@ -1,11 +1,11 @@
-#inline { display: none; width: 400px; }
+#student-form { display: none; width: 400px; }
 
 div.comment {
 	text-align: center;
 }
 
 div.comment span {
-	color: #ec6d07;
+	color: #23bcf5;
 }
 
 div.comment h3 {

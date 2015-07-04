@@ -170,20 +170,6 @@ p.small-paragraph {
 }
 /*Buttons*/
 
-.btn-primary {
-	font-size: 18px;
-	text-transform: uppercase;
-	border-width: 2px;
-	color: #fff;
-	font-weight: 800;
-	border-color: #e7e7e7;
-	background: none;
-}
-.btn-primary:hover, .btn-primary:focus {
-	background: none;
-	border-color: #57292b;
-	color: #57292b;
-}
 .btn-info {
 	font-size: 12px;
 	color: #fff;

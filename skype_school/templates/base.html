@@ -83,41 +83,6 @@
 
 
 {% block slider %}
-<section class="slider">
-  <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel"> 
-    <!-- Indicators -->
-    <div class="carousel-inner">
-      <div class="item active">
-		  <img data-src="images/slider/slider1.jpg" alt="First slide" src="{% static 'images/slider/slider1.jpg' %} ">
-			<div class="container">
-			  <div class="carousel-caption">
-				<p class="little"><span>Quisque et tellus lorem</span></p>
-				<h1>Nullam at nulla consequat purus feugiat vehicula</h1>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat.</p>
-				<p><a class="btn btn-default btn-lg" href="#" role="button">Подробнее</a></p>
-			  </div>
-			</div>
-      </div>
-      <div class="item"> 
-	  <img data-src="images/slider/slider2.jpg" alt="Second slide" src="{% static 'images/slider/slider2.jpg' %}">
-        <div class="container">
-          <div class="carousel-caption">
-				<p class="little"><span>Lorem ipsum dolor site.</span></p>
-				<h1>Nam pellentesque condimentum erat ac consequat</h1>
-				<p>Consectetur pharetra a, scelerisque ac mi. In lacus nulla, auctor sed felis.</p>
-				<p><a class="btn btn-default btn-lg" href="#" role="button">Начать</a></p>
-		  </div>
-        </div>
-      </div>
-    </div>
-	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-		<span class="glyphicon carousel-control-left"></span>
-	</a>
-	<a class="right carousel-control" href="#myCarousel" data-slide="next">
-		<span class="glyphicon carousel-control-right"></span>
-		</a> 
-	</div>
-</section>
 {% endblock %}
 	
 {% block content %}{% endblock %}
@@ -259,24 +224,32 @@
 
 <a href="#" class="scrollToTop"></a>
 
-		<!-- hidden inline form -->
-		<div id="inline">
+		<!-- hidden student-form -->
+		<div id="student-form">
 			<div class="comment">
-			<h3>Оставьте <span>заявку</span></h3>
-			<h3>и мы вам перезвоним.</h3>
+			<h3>пожалуйста <span>заполните заявку</span> и мы вам перезвоним</h3>
 			</div>
 		<br>
-			<form role="form" id="contact" name="contact" action="" method="post" class="phone_form">
+			<form role="form" id="student-form-contact" name="student-form-contact" action="" method="post" class="phone_form">
 					{% csrf_token %}
-						<label for="name">Ваше имя:</label>
+						<label class="sr-only" for="name">Ваше имя:</label>
 						<input name="name" required type="text" id="name" class="txt form-control" placeholder="Ваше имя: *" autofocus="autofocus">
 					<br>
-					<div class="user_phone">
-						<label for="user_phone">Телефон:</label>
-						<input name= "phone" required type="text" id="user_phone" class="form-control" placeholder="Ваш телефон: *" title="Формат: (096) 999 99 99" />
-					</div>
+						<label class="sr-only" for="email">Email: *</label>
+						<input required="" type="email" class="form-control" id="email" name="email" placeholder="Email: *">
+					<br>			
+						<label for="subject">Предмет, который Вы желаете изучить: *</label>
+						<input type="text" class="form-control" id="subject" name="subject" placeholder="Предмет: *">
+					<br>						
+						<textarea required="" class="form-control" id="message" name="message" rows="5" placeholder="Сообщение: *"></textarea>
+					<br>					
+						<div class="user_phone">
+							<label class="sr-only" for="user_phone">Телефон:</label>
+							<input name= "phone" required type="text" id="user_phone" class="form-control" placeholder="Ваш телефон: *" title="Формат: (096) 999 99 99" />
+						</div>
 					<br>
-					<input id="send" class="btn btn-primary" type="submit" value="Отправить">					
+					<!--<a id="send" href="#" onclick="parentNode.submit()" class="dc_bevel_button blue">Отправить</a>-->
+					<input id="send" class="btn btn-primary" type="submit" value="Отправить">
 			</form>
 		</div>
 		<!-- hidden inline form -->

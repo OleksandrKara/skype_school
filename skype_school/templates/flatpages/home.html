@@ -21,7 +21,41 @@
 {% endblock %}
 
 {% block slider %}
-	{{ block.super }}
+	<section class="slider">
+  <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel"> 
+    <!-- Indicators -->
+    <div class="carousel-inner">
+      <div class="item active">
+		  <img data-src="images/slider/slider1.jpg" alt="First slide" src="{% static 'images/slider/slider1.jpg' %} ">
+			<div class="container">
+			  <div class="carousel-caption">
+				<p class="little"><span>Quisque et tellus lorem</span></p>
+				<h1>Nullam at nulla consequat purus feugiat vehicula</h1>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat.</p>
+				<p><a class="btn btn-default btn-lg become-a-teacher" href="#inline" role="button">Стать репетитором</a></p>
+			  </div>
+			</div>
+      </div>
+      <div class="item"> 
+	  <img data-src="images/slider/slider2.jpg" alt="Second slide" src="{% static 'images/slider/slider2.jpg' %}">
+        <div class="container">
+          <div class="carousel-caption">
+				<p class="little"><span>Lorem ipsum dolor site.</span></p>
+				<h1>Nam pellentesque condimentum erat ac consequat</h1>
+				<p>Consectetur pharetra a, scelerisque ac mi. In lacus nulla, auctor sed felis.</p>
+				<p><a class="btn btn-default btn-lg become-a-student" href="#student-form" role="button">Стать учеником</a></p>
+		  </div>
+        </div>
+      </div>
+    </div>
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		<span class="glyphicon carousel-control-left"></span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" data-slide="next">
+		<span class="glyphicon carousel-control-right"></span>
+		</a> 
+	</div>
+</section>
 {% endblock %}
 
 {% block content %}
@@ -101,7 +135,7 @@
 	<script type="text/javascript">
 		$('.carousel').carousel({
 		  interval: 3500, // in milliseconds
-		  pause: 'none' // set to 'true' to pause slider on mouse hover
+		  pause: 'true' // set to 'true' to pause slider on mouse hover
 		})
 	</script>
 {% endblock %}

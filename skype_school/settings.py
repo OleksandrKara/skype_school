@@ -88,8 +88,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'skype_school',
-		'USER': 'admincX5UDKU',
-		'PASSWORD': 'ByDw5CVhjCEX',
+		'USER': 'root',
+		'PASSWORD': '1111',
 		#'PASSWORD': '1111',
 		'HOST': 'localhost',
         'PORT': '3306',
@@ -138,8 +138,8 @@ CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.j
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'kiev.tatuazh@gmail.com'
-EMAIL_HOST_PASSWORD = 'karaanna'
+EMAIL_HOST_USER = 'olexandr.kara@gmail.com'
+EMAIL_HOST_PASSWORD = 'Oab22uaru'
 
 DISQUS_API_KEY = 'uYCrQucNzezmexT8uLj2mEA6Rxi1gf2sSqipmmy7wl8t3jtYfL6I4ICeeDozNgEg'
 DISQUS_WEBSITE_SHORTNAME = 'skype_school'
