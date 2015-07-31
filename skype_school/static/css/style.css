@@ -229,10 +229,50 @@ footer .btn-md, .recent-posts .btn-md {
 }
 /*Header*/
 
+header.main__header {
+	background: #333 none repeat scroll 0 0;
+	position: fixed;
+}
+header.second__header {
+	background: #2271B3;
+	margin-top: 30px;
+}
+.address {
+	color: #fff;
+	margin-top: 12px;
+	text-align: right;
+}
+.a__tel {
+	color: #fff;
+	font-family: "open_sansregular";
+    font-size: 30px;
+    line-height: 50px;
+    text-decoration: none;
+}
+a.a__tel:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.logo{
+	padding: 10px 0 0 0;
+}
+div.logo-img {
+	background: url('../images/logo-2.png') no-repeat scroll center center / cover;
+	/*rgba(0, 0, 0, 0) url("../images/logo.png") no-repeat scroll center center / cover ;*/
+	float: left;
+    height: 60px;
+    margin: 12px 0 0 40px;
+    width: 270px;
+}
+.address span {
+    display: block;
+    font-size: 11px;
+    margin-top: -5px;
+}
+
 header {
-	background: none;
+	top: 0;
 	width: 100%;
-	position: relative;
 	z-index: 99;
 }
 header.sub__header {
@@ -242,17 +282,19 @@ header.sub__header {
 	z-index: 99;
 }
 .navbar-header {
+	padding: 5px 0 0 0;
 }
 .navbar-toggle {
 	margin-right: 0;
 	position: absolute;
+	z-index: 999;
 }
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
 	font-size: 36px;
 	color: #fff;
 	width: 100%;
 	text-transform: uppercase;
-	padding: 10px 0;
+	padding: 0px 0;
 }
 .navbar-default .navbar-brand a {
 	color: #fff;
@@ -266,7 +308,49 @@ header.sub__header {
 	display: block;
 	top: 10px;
 }
+
+.gorizont_form {
+	margin: 65px auto 0;
+	background: #fff none repeat scroll 0 0;
+    height: 185px;
+    width: 100%;
+}
+.gorizont_form form {
+    margin: 20px auto 0;
+    width: 960px;
+	padding: 20px;
+}
+.gorizont_form form input[name="name"] {
+    width: 183px;
+}
+.gorizont_form form input[type="text"] {
+    border: 1px solid #cdcdcd;
+    color: #9f9f9f;
+    font-family: HMN;
+    font-size: 19px;
+    height: 44px;
+    margin: 5px 8px 0 0;
+    padding: 0 0 0 15px;
+}
+.gift {
+	display: block;
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+    width: 100px;
+}
+.fl {
+	float: left;
+}
+div.mail, div.telephone {
+    margin-left: 25px;
+}
+
 /*Main Navigaion Menu*/
+
+.call {
+	text-decoration: underline;
+}
 
 .dropdown:hover .dropdown-menu {
 	display: block;
@@ -274,7 +358,7 @@ header.sub__header {
 .navbar-default {
 	background: none;
 	border: none;
-	margin-bottom: 0px;
+	margin-bottom: -20px;
 	position: relative;
 	z-index: 999;
 }
@@ -282,7 +366,7 @@ header.sub__header {
 	padding: 0px;
 }
 .navbar-default .navbar-nav>li {
-	padding: 30px 0;
+	padding: 5px 0 0 0;
 	margin-left: 30px;
 }
 .navbar-default .navbar-nav>li:hover {
@@ -292,7 +376,7 @@ header.sub__header {
 	font-size: 12px;
 	padding: 0px 15px;
 	font-weight: normal;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	font-family: 'Open Sans', sans-serif;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -360,8 +444,6 @@ ul.dropdown-menu>li>a:hover {
 .slider {
 	position: relative;
 	z-index: 9;
-	margin-top: -10px;
-	bottom: 70px;
 }
 .absolute__img {
 	position: absolute;
@@ -374,8 +456,8 @@ ul.dropdown-menu>li>a:hover {
 	margin: 40px 10px 0;
 }
 .carousel-caption {
-	top: 50%;
-	margin-top: -150px;
+	top: 0%;
+	/*margin-top: -150px;*/
 	font-size: 18px;
 	color: #fff;
 	text-transform: none;
@@ -386,7 +468,7 @@ ul.dropdown-menu>li>a:hover {
 	line-height: 60px;
 	color: #fff;
 	text-transform: uppercase;
-	margin: 40px 0;
+	margin: 5px 0 15px;
 }
 .carousel-caption p {
 	font-weight: 700;
@@ -952,14 +1034,13 @@ footer button.btn-info:focus {
 
  @media(max-width:1600px) {
 .carousel-caption h1 {
-	font-size: 40px;
-	line-height: 50px;
+	font-size: 35px;
+	line-height: 40px;
 }
 }
  @media(max-width:1310px) {
 .carousel-caption {
 	font-size: 14px;
-	top: 55%;
 }
 .navbar-default .navbar-nav>li {
 	margin-left: 10px;
@@ -988,7 +1069,7 @@ footer button.btn-info:focus {
 }
 .carousel-caption {
 	font-size: 13px;
-	top: 50%;
+	top: 35%;
 	margin-top: -110px;
 	left: 15%;
 	right: 15%;
@@ -1040,7 +1121,9 @@ div#vk_group_with_friends{
 div#vk_group_with_name{
 	display: none;
 } 
-
+.a__tel {
+	font-size: 20px;
+}
 h1.page_title {
 	padding: 20px 30px;
 }
@@ -1144,6 +1227,14 @@ header {
 	display: none;
 }
 }
+ @media(max-width:465px) {
+	.address-container {
+		float: left;
+	}
+	.address {
+		text-align: left;
+	}
+ }
  @media(max-width:440px) {
 .carousel-caption {
 	display: none;

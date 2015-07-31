@@ -21,39 +21,65 @@
 {% endblock %}
 
 {% block slider %}
-	<section class="slider">
-  <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel"> 
+<section class="slider">
+	<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel"> 
     <!-- Indicators -->
-    <div class="carousel-inner">
-      <div class="item active">
-		  <img data-src="images/slider/slider1.jpg" alt="First slide" src="{% static 'images/slider/slider1.jpg' %} ">
+		<div class="carousel-inner">
+			<div class="item active">
+			  <img data-src="images/slider/slider1.jpg" alt="First slide" src="{% static 'images/slider/slider1.jpg' %} ">
+				<div class="container">
+					<div class="carousel-caption">
+					<!--<p class="little"><span>Quisque et tellus lorem</span></p>-->
+					<h1>Skype школа по изучению английского и других иностранных языков</h1>
+					<p>Нет времени на посещение языковых курсов, мы организуем для Вас индивидуальные занятия по скайпу</p>
+					<div class="gorizont_form">
+						<div class="gift-title">
+							<p>Запишитесь на БЕСПЛАТНОЕ пробное занятие прямо сейчас!</p>
+							<img class="gift" alt="" src="{% static 'images/icons/gift.png' %}">
+						</div>
+						<form class="contactform" method="post" action="../php/send.php" metrika-actions="all2">
+							<div class="name fl">
+								<label>Введите Ваше имя:</label>
+								<br>
+								<input class="validate[required]" type="text" placeholder="Иван" name="name">
+							</div>
+							<div class="mail fl">
+								<label>Введите e-mail:</label>
+								<br>
+								<input class="validate[required,custom[email]]" type="text" placeholder="Ivanov@ivan.ru" name="email">
+							</div>
+							<div class="telephone fl">
+								<label>Введите телефон:</label>
+								<br>
+								<input class="validate[required]" type="text" maxlength="20" placeholder="89081051666" name="phone">
+							</div>
+							<div class="button fl">
+								<button class="fontsize" type="submit">Получить консультацию + подарок</button>
+							</div>
+						</form>
+						
+					</div>
+					</div>
+				</div>
+			</div>
+		  <!--<div class="item"> 
+		  <img data-src="images/slider/slider2.jpg" alt="Second slide" src="{% static 'images/slider/slider2.jpg' %}">
 			<div class="container">
 			  <div class="carousel-caption">
-				<p class="little"><span>Quisque et tellus lorem</span></p>
-				<h1>Nullam at nulla consequat purus feugiat vehicula</h1>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat.</p>
-				<p><a class="btn btn-default btn-lg become-a-teacher" href="#inline" role="button">Стать репетитором</a></p>
+					<p class="little"><span>Lorem ipsum dolor site.</span></p>
+					<h1>Nam pellentesque condimentum erat ac consequat</h1>
+					<p>Consectetur pharetra a, scelerisque ac mi. In lacus nulla, auctor sed felis.</p>
+					<p><a class="btn btn-default btn-lg become-a-student" href="#student-form" role="button">Стать учеником</a></p>
 			  </div>
 			</div>
-      </div>
-      <div class="item"> 
-	  <img data-src="images/slider/slider2.jpg" alt="Second slide" src="{% static 'images/slider/slider2.jpg' %}">
-        <div class="container">
-          <div class="carousel-caption">
-				<p class="little"><span>Lorem ipsum dolor site.</span></p>
-				<h1>Nam pellentesque condimentum erat ac consequat</h1>
-				<p>Consectetur pharetra a, scelerisque ac mi. In lacus nulla, auctor sed felis.</p>
-				<p><a class="btn btn-default btn-lg become-a-student" href="#student-form" role="button">Стать учеником</a></p>
-		  </div>
-        </div>
-      </div>
-    </div>
-	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		  </div>-->
+		</div>
+	<!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">
 		<span class="glyphicon carousel-control-left"></span>
 	</a>
 	<a class="right carousel-control" href="#myCarousel" data-slide="next">
 		<span class="glyphicon carousel-control-right"></span>
-		</a> 
+	</a> -->
 	</div>
 </section>
 {% endblock %}
