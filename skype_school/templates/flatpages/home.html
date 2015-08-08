@@ -28,14 +28,14 @@
 			<div class="item active">
 			  <img data-src="images/slider/slider1.jpg" alt="First slide" src="{% static 'images/slider/slider1.jpg' %} ">
 				<div class="container">
-					<div class="carousel-caption">
+					<div class="present">
 					<!--<p class="little"><span>Quisque et tellus lorem</span></p>-->
 					<h1>Skype школа по изучению английского и других иностранных языков</h1>
 					<p>Нет времени на посещение языковых курсов, мы организуем для Вас индивидуальные занятия по скайпу</p>
 					<div class="gorizont_form">
 						<div class="gift-title">
 							<p>Запишитесь на БЕСПЛАТНОЕ пробное занятие прямо сейчас!</p>
-							<img class="gift" alt="" src="{% static 'images/icons/gift.png' %}">
+							<!--<img class="gift" alt="" src="{% static 'images/icons/gift.png' %}">-->
 						</div>
 						<form class="contactform" method="post" action="../php/send.php" metrika-actions="all2">
 							<div class="name fl">
@@ -46,7 +46,7 @@
 							<div class="mail fl">
 								<label>Введите e-mail:</label>
 								<br>
-								<input class="validate[required,custom[email]]" type="text" placeholder="Ivanov@ivan.ru" name="email">
+								<input class="validate[required,custom[email]]" type="text" placeholder="Ivanov@ivan.ua" name="email">
 							</div>
 							<div class="telephone fl">
 								<label>Введите телефон:</label>
@@ -54,7 +54,7 @@
 								<input class="validate[required]" type="text" maxlength="20" placeholder="89081051666" name="phone">
 							</div>
 							<div class="button fl">
-								<button class="fontsize" type="submit">Получить консультацию + подарок</button>
+								<button class="btn btn-primary" type="submit"><p>Запишитесь</p> на БЕСПЛАТНОЕ занятие</button>
 							</div>
 						</form>
 						
