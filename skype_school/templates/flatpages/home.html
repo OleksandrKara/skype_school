@@ -22,16 +22,15 @@
 
 {% block slider %}
 <section class="slider">
-	<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel"> 
+	<!--<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel"> -->
     <!-- Indicators -->
-		<div class="carousel-inner">
-			<div class="item active">
-			  <img data-src="images/slider/slider1.jpg" alt="First slide" src="{% static 'images/slider/slider1.jpg' %} ">
-				<div class="container">
-					<div class="present">
+		<div class="banner">
+			<!--<img data-src="images/slider/slider1.jpg" alt="First slide" src="{% static 'images/slider/slider1.jpg' %} ">-->
+			<div class="container">
+				<div class="present">
 					<!--<p class="little"><span>Quisque et tellus lorem</span></p>-->
 					<h1>Skype школа по изучению английского и других иностранных языков</h1>
-					<p>Нет времени на посещение языковых курсов, мы организуем для Вас индивидуальные занятия по скайпу</p>
+					<p class="sub-header">Нет времени на посещение языковых курсов, мы организуем для Вас индивидуальные занятия по скайпу</p>
 					<div class="gorizont_form">
 						<div class="gift-title">
 							<p>Запишитесь на БЕСПЛАТНОЕ пробное занятие прямо сейчас!</p>
@@ -53,76 +52,124 @@
 								<br>
 								<input class="validate[required]" type="text" maxlength="20" placeholder="89081051666" name="phone">
 							</div>
-							<div class="button fl">
-								<button class="btn btn-primary" type="submit"><p>Запишитесь</p> на БЕСПЛАТНОЕ занятие</button>
+							<div class="button">
+								<button class="small-bt btn btn-info btn-lg" type="submit"><p>Запишитесь</p></button>
 							</div>
 						</form>
-						
-					</div>
 					</div>
 				</div>
 			</div>
-		  <!--<div class="item"> 
-		  <img data-src="images/slider/slider2.jpg" alt="Second slide" src="{% static 'images/slider/slider2.jpg' %}">
-			<div class="container">
-			  <div class="carousel-caption">
-					<p class="little"><span>Lorem ipsum dolor site.</span></p>
-					<h1>Nam pellentesque condimentum erat ac consequat</h1>
-					<p>Consectetur pharetra a, scelerisque ac mi. In lacus nulla, auctor sed felis.</p>
-					<p><a class="btn btn-default btn-lg become-a-student" href="#student-form" role="button">Стать учеником</a></p>
-			  </div>
-			</div>
-		  </div>-->
 		</div>
-	<!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-		<span class="glyphicon carousel-control-left"></span>
-	</a>
-	<a class="right carousel-control" href="#myCarousel" data-slide="next">
-		<span class="glyphicon carousel-control-right"></span>
-	</a> -->
-	</div>
+	<!--</div>-->
 </section>
 {% endblock %}
 
 {% block content %}
 <section class="main__middle__container homepage13">
     <div class="row text-center no-margin nothing">
-		<div class="container headings">
-			{{ flatpage.content }}  
+		<div class="container">
+			<eggs>
+				<div class="col-xs-4 egg">
+					<img class="img-responsive" alt="" src="http://deutschkurse.ru/wp-content/themes/deutchkourse/images/egg_1.png">
+					<div class="desc">
+					<p>Квалифицированные преподаватели</p>
+					Каждый преподаватель проходит тестирование от специалистов нашей платфорты</div>
+				</div>
+				
+				<div class="col-xs-4 egg">
+					<img class="img-responsive" alt="" src="http://deutschkurse.ru/wp-content/themes/deutchkourse/images/egg_1.png">
+					<div class="desc">
+					<p>Более 2000 учеников</p>
+					<p>Более 2000 ученико уже нашли своего ппреподавателя используя нашу платформу</p>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 egg">
+					<img class="img-responsive" alt="" src="http://deutschkurse.ru/wp-content/themes/deutchkourse/images/egg_1.png">
+					<div class="desc">
+					<p>Широкий спектр программ обучения</p>
+					<p>Разговорный, грамматика, подготовка к TOFEL, IELTIS</p>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 egg">
+					<img class="img-responsive" alt="" src="http://deutschkurse.ru/wp-content/themes/deutchkourse/images/egg_1.png">
+					<div class="desc">
+					<p>Гибкий график</p>
+					<p>Вы сами строите свой график занятий</p>
+					</div>
+				</div>
+				
+				<div class="col-xs-4 egg">
+					<img class="img-responsive" alt="" src="http://deutschkurse.ru/wp-content/themes/deutchkourse/images/egg_1.png">
+					<div class="desc">
+					<p>Гарантия возврата денег</p>
+					<p>Если занятия не состоялись или Вам не подошел репетитор, мы гарантируем возврат ваших средств</p>
+					</div>
+				</div>
+				
+				
+				
+				<div class="col-xs-4 egg">
+					<img class="img-responsive" alt="" src="http://deutschkurse.ru/wp-content/themes/deutchkourse/images/egg_1.png">
+					<div class="desc">
+					<p>Выгодные цены</p>
+					<p>На много дешевле чем языковые курсы</p>
+					</div>
+				</div>
+
+			</eggs>
 		</div>
 	</div>
 	
     <div class="row  three__blocks text-center no_padding no-margin">
         <div class="container">
-            <h2>OUR CREATIVE SERVICES</h2>
+            <h2>Цены на занятия с репетитором</h2>
             <span class="separator"></span>
-            <p class="small-paragraph">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
+            <p class="small-paragraph">Чтобы узнать все цены на услуги перейдите по <a href="/">этой ссылке.</a></p>
             <div class="col-md-4 img-rounded"> 
-				<img src="{% static 'images/img1.jpg' %}" alt="image" class="img-responsive img-rounded">
-                <h3><a href="http://www.htmlpreviews.com/cloud/education/inition7/index.html#">Creative Design</a></h3>
-                <p class="smaller">Vestibulum auctor dapibus neque.</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. </p>
-                <p><a class="btn btn-info btn-lg" href="http://www.htmlpreviews.com/cloud/education/inition7/index.html#" role="button">Learn more</a>
+                <h3><a href="/">95 грн.</a></h3>
+                <p class="smaller">1 занятие</p>
+                <ul>
+					<li>Обучение разговорного английского языка. </li>
+					<li>Занятие длится 45 минут. </li>
+				</ul>
+				<p><a class="btn btn-info btn-lg" href="http://www.htmlpreviews.com/cloud/education/inition7/index.html#" role="button">Заказать</a>
                 </p>
             </div>
             <div class="col-md-4 img-rounded middle"> 
-				<img src="{% static 'images/img2.jpg' %}" alt="image" class="img-responsive img-rounded">
-                <h3><a href="http://www.htmlpreviews.com/cloud/education/inition7/index.html#">ONLINE MARKETING</a></h3>
-                <p class="smaller">Vestibulum auctor dapibus neque.</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. </p>
-                <p><a class="btn btn-info btn-lg" href="http://www.htmlpreviews.com/cloud/education/inition7/index.html#" role="button">Learn more</a>
+				<!--<img src="{% static 'images/img2.jpg' %}" alt="image" class="img-responsive img-rounded">-->
+                <h3><a href="/">1700 грн.</a></h3>
+                <p>20 занятий</p>
+				<p class="smaller">Экономия 200 грн.</p>
+                <ul>
+					<li>Обучение разговорного английского языка. </li>
+					<li>Занятие длится 45 минут. </li>
+				</ul>
+                <p><a class="btn btn-info btn-lg" href="http://www.htmlpreviews.com/cloud/education/inition7/index.html#" role="button">Заказать</a>
                 </p>
             </div>
             <div class="col-md-4 img-rounded">		
-				<img src="{% static 'images/img3.jpg' %}" alt="image" class="img-responsive img-rounded">
-                <h3><a href="http://www.htmlpreviews.com/cloud/education/inition7/index.html#">SOCIAL MEDIA</a></h3>
-                <p class="smaller">Vestibulum auctor dapibus neque.</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. </p>
-                <p><a class="btn btn-info btn-lg" href="http://www.htmlpreviews.com/cloud/education/inition7/index.html#" role="button">Learn more</a>
+				<!--<img src="{% static 'images/img3.jpg' %}" alt="image" class="img-responsive img-rounded">-->
+                <h3><a href="/">900 грн.</a></h3>
+				<p>10 занятий</p>
+				<p class="smaller">экономия 50 грн.</p>
+                <ul>
+					<li>Обучение разговорного английского языка. </li>
+					<li>Занятие длится 45 минут. </li>
+				</ul>
+                <p><a class="btn btn-info btn-lg" href="http://www.htmlpreviews.com/cloud/education/inition7/index.html#" role="button">Заказать</a>
                 </p>
             </div>
         </div>
+		<hr>
+		<div class="container">
+			<!--TODO-->
+		</div>
     </div>
+	
+	
+	
     <div class="text-center three-blocks">
         <div class="container">
             <div class="row white__heading">

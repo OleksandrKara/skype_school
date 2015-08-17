@@ -13,7 +13,7 @@ a, input, button {
 	transition: all ease .2s;
 }
 body {
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: Lyno;
 	/*color: #a6a8a8;*/
 	font-size: 14px;
 }
@@ -31,7 +31,7 @@ hr {
 	margin: 10px 0 10px 0;
 }
 h1, h2, h3, h4, h5, .btn, p.big-paragraph, .carousel-caption, .recent-posts .col-md-9 .text p small, .navbar-default .navbar-brand, .orange {
-	font-family: 'Open Sans', sans-serif;
+	font-family: Lyno;
 	font-weight: 800;
 }
 h1 {
@@ -136,7 +136,7 @@ h2.with__margin2 {
 p.small-paragraph {
 	font-size: 18px;
 	color: #c5c5c5;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Lyno;
 }
 .relative_btn {
 	position: absolute;
@@ -199,7 +199,7 @@ p.small-paragraph {
 	color: #fff;
 	border-color: #23bef8;
 	font-weight: bold;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Lyno;
 	background: #23bef8;
 }
 .btn-default:hover, .btn-default:focus, .btn-default:active {
@@ -211,16 +211,16 @@ button.btn-primary:focus, .btn-default:focus, .btn-info:focus {
 	outline: none;
 }
 .btn-lg {
-	width: 180px;
-	height: 47px;
-	line-height: 47px;
+	width: 160px;
+	height: 42px;
+	line-height: 42px;
 	padding: 0;
 }
 .btn-md {
 	font-size: 14px;
 	width: 140px;
-	height: 45px;
-	line-height: 42px;
+	height: 40px;
+	line-height: 40px;
 	padding: 0;
 	margin-top: 20px;
 }
@@ -245,8 +245,15 @@ footer .btn-md, .recent-posts .btn-md {
 }
 
 .present h1 {
-	font-size: 36px;
+	font-size: 39px;
 	color: #fff;
+	text-transform: uppercase;
+	line-height: 1.2em;
+}
+
+p.sub-header {
+	font-size: 25px;
+	
 }
 
 .present button p {
@@ -255,9 +262,9 @@ footer .btn-md, .recent-posts .btn-md {
 }
 
 .present .btn {
-	font-family: HMN;
+	font-family: Lyno;
 	text-transform: uppercase;
-	margin-top: 12px;
+	margin-top: 28px;
 }
 
 .contactform {
@@ -266,14 +273,15 @@ footer .btn-md, .recent-posts .btn-md {
 .gift-title p {
 	margin-top: 10px;
 	padding-top: 15px;
+	font-weight: bold;
 }
 
 .gorizont_form {
-	margin: 90px auto 0;
+	margin-top: 12%;
 	background: rgba(255, 255, 255, 0.75) none repeat scroll 0 0;
-    border-radius: 5px;
+    border-radius: 2px;
     box-shadow: 2px 3px 7px -1px rgba(0, 0, 0, 0.6);
-    height: 165px;
+    height: 147px;
     width: 100%;
 	color: #000;
 }
@@ -284,15 +292,19 @@ footer .btn-md, .recent-posts .btn-md {
 .gorizont_form form input[type="text"] {
     border: 1px solid #cdcdcd;
     color: #9f9f9f;
-    font-family: HMN;
+    font-family: Lyno;
     font-size: 19px;
-    height: 44px;
+    height: 40px;
     padding: 0 0 0 15px;
 }
 .gorizont_form form label {
     font-size: 14px;
     margin: 0 0 0 10px;
 	text-align: unset;
+}
+.gorizont_form .button {
+	float: right;
+	margin-right: 25px;
 }
 .gift {
 	display: block;
@@ -313,28 +325,29 @@ div.mail, div.telephone, div.button, div.name  {
 /*Header*/
 
 header.main__header {
-	background: #333 none repeat scroll 0 0;
+	background: #222 none repeat scroll 0 0;
 	position: fixed;
+	border-bottom: 3px solid #a0a0a0;
+	height: 37px;
 }
 header.second__header {
-	background: #2271B3;
-	margin-top: 30px;
-	border-top: 4px solid #5a5a5a;
+	background: #fff;
+	margin-top: 18px;
 }
 .address {
-	color: #fff;
+	color: #000;
 	margin-top: 12px;
 	text-align: right;
 }
 .a__tel {
-	color: #fff;
-	font-family: "open_sansregular";
-    font-size: 30px;
+	color: #000;
+	font-family: Lyno;
+    font-size: 25px;
     line-height: 50px;
     text-decoration: none;
 }
 a.a__tel:hover {
-	color: #fff;
+	color: #000;
 	text-decoration: underline;
 }
 .logo{
@@ -345,8 +358,8 @@ div.logo-img {
 	/*rgba(0, 0, 0, 0) url("../images/logo.png") no-repeat scroll center center / cover ;*/
 	float: left;
     height: 60px;
-    margin: 12px 0 0 40px;
-    width: 270px;
+    margin: 23px 0 0 40px;
+    width: 200px;
 }
 .address span {
     display: block;
@@ -398,7 +411,17 @@ header.sub__header {
 /*Main Navigaion Menu*/
 
 .call {
-	text-decoration: underline;
+	color: #fff;
+	background: #23bcf5;
+	line-height: 10px;
+	text-transform: uppercase;
+	border-color: #23bcf5;
+    border-radius: 2px;
+    border-width: 1px;
+	font-family: Lyno;
+}
+.call:hover {
+	color: #fff;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -422,11 +445,10 @@ header.sub__header {
 }
 .navbar-default .navbar-nav>li>a {
 	color: #fff;
-	font-size: 12px;
-	padding: 0px 15px;
-	font-weight: normal;
-	/*font-weight: bold;*/
-	font-family: 'Open Sans', sans-serif;
+	font-size: 11px;
+	padding: 0px 15px;	
+	font-weight: bold;
+	font-family: Lyno;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	text-transform: uppercase;
@@ -599,19 +621,22 @@ ul.dropdown-menu>li>a:hover {
 	font-size: 40px;
 	line-height: 40px;
 }
+div.banner {
+	background: url('../images/slider/slider1.jpg') no-repeat center top;
+	height: 580px;
+	width: 100%;
+}
 /*Container*/
 
 .main__middle__container .row ul, .main__middle__container .row ol {
-	padding-left: 20px;
+	padding-left: 40px;
+    text-align: left;
 }
 .main__middle__container {
 	width: 100%;
 }
-.homepage13 {
-	margin-top: -70px;
-}
 .row {
-	padding: 75px 0;
+	padding: 35px 0;
 }
 .row.with__sep {
 	background: url('../images/lines.png') repeat-x left bottom;
@@ -769,7 +794,7 @@ img.full-width {
 	background-color: #f6f6f6;
 }
 .three__blocks h2 {
-	color: #a0a0a0;
+	color: #333;
 	padding-top: 60px;
 }
 .three__blocks .separator {
@@ -828,8 +853,8 @@ img.full-width {
 	margin: 0 20px;
 }
 .three__blocks .col-md-4 p.smaller {
-	color: #c7c7c7;
-	font-size: 12px;
+	color: #ea4b53;
+	font-size: 15px;
 	text-transform: uppercase;
 	border-bottom: 1px solid #e1e1e1;
 	margin: 10px 20px 20px 20px;
@@ -1071,6 +1096,90 @@ footer button.btn-info:focus {
 	padding-right: 0px !important;
 }
 
+@media(max-width:1920px) {
+	.present {
+		left: 19%;
+		right: 19%;
+	}
+}
+
+@media(max-width:1600px) {
+	.carousel-caption h1 {
+		font-size: 35px;
+		line-height: 40px;
+	}
+	.present {
+		left: 15%;
+		right: 15%;
+	}
+}
+
+@media(max-width:1410px) {
+	.gorizont_form .button {
+		margin-right: 13px;
+	}
+	div.mail, div.telephone, div.button, div.name {
+		margin-left: 13px;
+	}
+	/*.gorizont_form {
+		margin: 50px auto 0;
+	}*/
+}
+
+@media(max-width:1310px) {
+	.sub-header {
+		font-size: 17px;
+	}
+	.navbar-default .navbar-nav>li {
+		margin-left: 10px;
+	}
+	.carousel-caption p.little {
+		display: none;
+	}
+	.carousel-caption p {
+		margin: 30px 0;
+	}
+	.gorizont_form form input[type="text"] {
+		font-size: 16px;
+	}
+	.gorizont_form form label {
+		font-size: 10px;
+	}
+	.gorizont_form form input[name="name"] {
+		width: 150px;
+	}
+}
+
+@media(max-width:1200px) {
+	.sub-header {
+		font-size: 15px;
+	}
+	.gorizont_form form label {
+		font-size: 12px;
+	}
+	.gorizont_form form input[type="text"] {
+		font-size: 14px;
+		font-weight: unset;
+		padding: 0 0 0 10px;
+		width: 147px;
+	}
+	/*.gorizont_form {
+		margin: 10px auto 0;
+	}*/
+	.present {
+		padding-top: 0;
+	}
+}
+
+@media(max-width:1100px) {
+	.contactform {
+		margin-top: 16px;
+	}
+	.gorizont_form {
+		height: 140px;
+	}
+}
+
 @media(max-width:1024px) {
 	div#vk_group_with_friends {
 		display: none;
@@ -1081,33 +1190,12 @@ footer button.btn-info:focus {
 	}
 }
 
- @media(max-width:1600px) {
-.carousel-caption h1 {
-	font-size: 35px;
-	line-height: 40px;
+@media(max-width:1002px) {
+	.gorizont_form {
+		display: none;
+	}
 }
-}
- @media(max-width:1310px) {
-.carousel-caption {
-	font-size: 14px;
-}
-.navbar-default .navbar-nav>li {
-	margin-left: 10px;
-}
-.carousel-caption p.little {
-	display: none;
-}
-.carousel-caption h1 {
-	font-size: 30px;
-	line-height: 40px;
-}
-.slider .btn {
-	margin: 0 10px;
-}
-.carousel-caption p {
-	margin: 30px 0;
-}
-}
+
  @media(max-width:990px) {
 .three__blocks .col-md-6, .three__blocks .col-md-4 {
 	width: 100%;
@@ -1173,6 +1261,11 @@ div#vk_group_with_name{
 .a__tel {
 	font-size: 20px;
 }
+div.logo-img {
+	height: 45px;
+    margin: 18px 0 0 40px;
+    width: 210px;
+}
 h1.page_title {
 	padding: 20px 30px;
 }
@@ -1197,8 +1290,7 @@ h1.page_title {
 header.with-boxed {
 	height: auto;
 }
-}
- @media(max-width:767px) {
+
 .navbar-collapse {
 	height: 0px;
 	overflow: hidden;
@@ -1210,6 +1302,8 @@ header.with-boxed {
 }
 .navbar-collapse.in {
 	display: block !important;
+	opacity: 0.9;
+	background: #000;
 }
 .navbar-default .navbar-nav {
 	padding: 0;
@@ -1252,8 +1346,8 @@ header {
 }
 .navbar-default .navbar-toggle {
 	border-color: #fff;
-	top: 15px;
-	right: 5px;
+	right: -11px;
+    top: -7px;
 }
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: #fff;
@@ -1283,11 +1377,30 @@ header {
 	.address {
 		text-align: left;
 	}
+	.a__tel {
+		line-height: 23px;
+	}
+	div.logo-img {
+		height: 33px;
+		margin: 10px 65px 0 0;
+		width: 150px;
+	}
  }
  @media(max-width:440px) {
-.carousel-caption {
-	display: none;
+	.carousel-caption {
+		display: none;
+	}
 }
+@media(max-width:400px) {
+	div.logo-img {
+		margin: 10px 22px 0 0;
+	}
+	.a__tel {
+		font-size: 16px;
+	}
+	.address span {
+		font-size: 10px;
+	}
 }
 .carousel-fade {
  .carousel-inner {
@@ -1721,4 +1834,23 @@ h4 {
 }
 .scrollToTop:hover{
     text-decoration:none;
+}
+eggs img {
+	margin: auto auto 12px;
+}
+
+.desc {
+    font-size: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.desc p:first-child {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+div.egg {
+	height: 275px;
 }
