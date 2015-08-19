@@ -22,13 +22,10 @@
 
 {% block slider %}
 <section class="slider">
-	<!--<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel"> -->
     <!-- Indicators -->
 		<div class="banner">
-			<!--<img data-src="images/slider/slider1.jpg" alt="First slide" src="{% static 'images/slider/slider1.jpg' %} ">-->
 			<div class="container">
 				<div class="present">
-					<!--<p class="little"><span>Quisque et tellus lorem</span></p>-->
 					<h1>Skype школа по изучению английского и других иностранных языков</h1>
 					<p class="sub-header">Нет времени на посещение языковых курсов, мы организуем для Вас индивидуальные занятия по скайпу</p>
 					<div class="gorizont_form">
@@ -70,14 +67,14 @@
 		<div class="container">
 			<eggs>
 				<div class="col-xs-4 egg">
-					<img class="img-responsive" alt="" src="http://deutschkurse.ru/wp-content/themes/deutchkourse/images/egg_1.png">
+					<img class="img-responsive" alt="" src="{% static 'images/eggs/egg_5.png' %}">
 					<div class="desc">
 					<p>Квалифицированные преподаватели</p>
 					Каждый преподаватель проходит тестирование от специалистов нашей платфорты</div>
 				</div>
 				
 				<div class="col-xs-4 egg">
-					<img class="img-responsive" alt="" src="http://deutschkurse.ru/wp-content/themes/deutchkourse/images/egg_1.png">
+					<img class="img-responsive" alt="" src="{% static 'images/eggs/egg_2.png' %}">
 					<div class="desc">
 					<p>Более 2000 учеников</p>
 					<p>Более 2000 ученико уже нашли своего ппреподавателя используя нашу платформу</p>
@@ -85,15 +82,15 @@
 				</div>
 				
 				<div class="col-xs-4 egg">
-					<img class="img-responsive" alt="" src="http://deutschkurse.ru/wp-content/themes/deutchkourse/images/egg_1.png">
+					<img class="img-responsive" alt="" src="{% static 'images/eggs/egg_3.png' %}">
 					<div class="desc">
 					<p>Широкий спектр программ обучения</p>
-					<p>Разговорный, грамматика, подготовка к TOFEL, IELTIS</p>
+					<p>Разговорный, грамматика, бизнес, подготовка к TOFEL, IELTIS</p>
 					</div>
 				</div>
 				
 				<div class="col-xs-4 egg">
-					<img class="img-responsive" alt="" src="http://deutschkurse.ru/wp-content/themes/deutchkourse/images/egg_1.png">
+					<img class="img-responsive" alt="" src="{% static 'images/eggs/egg_4.png' %}">
 					<div class="desc">
 					<p>Гибкий график</p>
 					<p>Вы сами строите свой график занятий</p>
@@ -101,17 +98,15 @@
 				</div>
 				
 				<div class="col-xs-4 egg">
-					<img class="img-responsive" alt="" src="http://deutschkurse.ru/wp-content/themes/deutchkourse/images/egg_1.png">
+					<img class="img-responsive" alt="" src="{% static 'images/eggs/egg_6.png' %}">
 					<div class="desc">
 					<p>Гарантия возврата денег</p>
 					<p>Если занятия не состоялись или Вам не подошел репетитор, мы гарантируем возврат ваших средств</p>
 					</div>
 				</div>
 				
-				
-				
 				<div class="col-xs-4 egg">
-					<img class="img-responsive" alt="" src="http://deutschkurse.ru/wp-content/themes/deutchkourse/images/egg_1.png">
+					<img class="img-responsive" alt="" src="{% static 'images/eggs/egg_1.png' %}">
 					<div class="desc">
 					<p>Выгодные цены</p>
 					<p>На много дешевле чем языковые курсы</p>
@@ -126,10 +121,11 @@
         <div class="container">
             <h2>Цены на занятия с репетитором</h2>
             <span class="separator"></span>
-            <p class="small-paragraph">Чтобы узнать все цены на услуги перейдите по <a href="/">этой ссылке.</a></p>
+            <p class="small-paragraph">Чтобы узнать все цены на занятия перейдите по <a href="/">этой ссылке.</a></p>
             <div class="col-md-4 img-rounded"> 
                 <h3><a href="/">95 грн.</a></h3>
-                <p class="smaller">1 занятие</p>
+                <p>1 занятие</p>
+				<p class="smaller"><br></p>
                 <ul>
 					<li>Обучение разговорного английского языка. </li>
 					<li>Занятие длится 45 минут. </li>

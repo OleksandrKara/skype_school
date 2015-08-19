@@ -336,7 +336,7 @@ header.second__header {
 }
 .address {
 	color: #000;
-	margin-top: 12px;
+	margin-top: 25px;
 	text-align: right;
 }
 .a__tel {
@@ -355,10 +355,9 @@ a.a__tel:hover {
 }
 div.logo-img {
 	background: url('../images/logo-2.png') no-repeat scroll center center / cover;
-	/*rgba(0, 0, 0, 0) url("../images/logo.png") no-repeat scroll center center / cover ;*/
 	float: left;
     height: 60px;
-    margin: 23px 0 0 40px;
+    margin: 34px 0 10px 40px;
     width: 200px;
 }
 .address span {
@@ -1262,8 +1261,8 @@ div#vk_group_with_name{
 	font-size: 20px;
 }
 div.logo-img {
-	height: 45px;
-    margin: 18px 0 0 40px;
+	height: 66px;
+    margin: 24px 0 0 40px;
     width: 210px;
 }
 h1.page_title {
@@ -1381,8 +1380,8 @@ header {
 		line-height: 23px;
 	}
 	div.logo-img {
-		height: 33px;
-		margin: 10px 65px 0 0;
+		height: 43px;
+		margin: 23px 65px 0 0;
 		width: 150px;
 	}
  }
@@ -1393,7 +1392,7 @@ header {
 }
 @media(max-width:400px) {
 	div.logo-img {
-		margin: 10px 22px 0 0;
+		margin: 21px 22px 0 0;
 	}
 	.a__tel {
 		font-size: 16px;
