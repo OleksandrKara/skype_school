@@ -25,18 +25,18 @@ pip install virualenv
 virtualenv NAME_OF_YOUR_APP
 source NAME_OF_YOUR_APP/bin/active
 6. List of installed apps:
-	pip list / pip freeze
+pip list
+pip freeze
 7. Download external modules:
 cd skype_school/skype_school
 git clone https://github.com/selevit/mymenu
 8. Install apps using reqirements.txt or one module by one:
-	pip install -r requirements.txt --allow-all-external
+pip install -r requirements.txt --allow-all-external
 	or
-	pip install Django==1.6.5
+pip install Django==1.6.5
 pip install django-ckeditor==4.4.7
 	...
 9. Download and install mysql server and workbench:
 http://dev.mysql.com/downloads/windows/installer/
 10. Try to run your app:
 puthon manage.py runserver
-	
