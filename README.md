@@ -7,9 +7,9 @@ What do you need to have a workspace:
 - repository with Python Django project
 
 Steps to deploy:
-1. Install cygwin with packages:(python2.7/python-paramiko/python-crypto/gcc/wget/openssh)
-2. Install git from site: https://git-scm.com/downloads
-3. Download your repository in folder with work:
+# Install cygwin with packages:(python2.7/python-paramiko/python-crypto/gcc/wget/openssh)
+# Install git from site: https://git-scm.com/downloads
+# Download your repository in folder with work:
 git clone https://github.com/OleksandrKara/skype_school.git
 4. Install easy_install and pip:
 wget https://pypi.python.org/packages/2.7/s/setuptools/setuptools-0.6c11-py2.7.egg#md5=fe1f997bc722265116870bc7919059ea
