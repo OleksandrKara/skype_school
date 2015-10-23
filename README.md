@@ -8,31 +8,37 @@ What do you need to have a workspace:
 
 How to deploy Django project on local WIn7-8 machine:
 
-0. Install git
+1.Install git
 
-1. Install python 2.7: https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi
+2.Install python 2.7: https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi
 
-2. Add to PATH C:\Python27\Scripts;C:\Python27
+3.Add to PATH C:\Python27\Scripts;C:\Python27
 
-3. Clone your repository: git clone https://github.com/OleksandrKara/skype_school.git
-3.1. Download external modules: cd skype_school/skype_school git clone https://github.com/selevit/mymenu
+4.Clone your repository: git clone https://github.com/OleksandrKara/skype_school.git
 
-4. Install Mysql + Workbench http://dev.mysql.com/downloads/windows/installer/
+5.Download external modules: cd skype_school/skype_school git clone https://github.com/selevit/mymenu
 
-5. Install mysql-python connector https://pypi.python.org/packages/2.7/M/MySQL-python/MySQL-python-1.2.5.win32-py2.7.exe#md5=6f43f42516ea26e79cfb100af69a925e
+6.Install Mysql + Workbench http://dev.mysql.com/downloads/windows/installer/
+
+7.Install mysql-python connector https://pypi.python.org/packages/2.7/M/MySQL-python/MySQL-python-1.2.5.win32-py2.7.exe#md5=6f43f42516ea26e79cfb100af69a925e
    Install python compiler if it's needed http://www.microsoft.com/en-us/download/confirmation.aspx?id=44266
 
-6. Create virtualenv
-	pip install virtualenv
-	virtualenv MY_WEB_SITE_ENC //will create envirement
-	copy your repository inside MY_WEB_SITE_ENC folder
-	open git bash
-	source MY_WEB_SITE_ENC/bin/active //will active your envirement
+8.Create virtualenv
+<code>pip install virtualenv</code>
 
-7. Install all python packages 
-   pip install -r requirements.txt --allow-all-external
-   List of installed packages: pip list pip freeze
+<code>virtualenv MY_WEB_SITE_ENC //will create envirement</code>
 
-7. Change settings.py with your mysql cridentials.
+<code>copy your repository inside MY_WEB_SITE_ENC folder</code>
 
-8. python manage.py runserver
+<code>open git bash</code>
+
+<code>source MY_WEB_SITE_ENC/bin/active //will active your envirement</code>
+
+9.Install all python packages:  
+<code>pip install -r requirements.txt --allow-all-external</code>
+   
+List of installed packages: <code>pip list pip freeze</code>
+
+10.Change settings.py with your mysql cridentials.
+
+11.python manage.py runserver
