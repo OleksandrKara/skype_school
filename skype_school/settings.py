@@ -50,7 +50,7 @@ INSTALLED_APPS = (
     'skype_school.mymenu',
     'skype_school.articles',
     'disqus',
-	'django_evolution',
+	#'django_evolution',
 	'ckeditor',
 )
 
@@ -87,9 +87,9 @@ WSGI_APPLICATION = 'skype_school.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'skype_school',
+        'NAME': 'tatuazhkiev',
 		'USER': 'root',
-		'PASSWORD': '1111',
+		'PASSWORD': 'TrustPoint85',
 		#'PASSWORD': '1111',
 		'HOST': 'localhost',
         'PORT': '3306',
