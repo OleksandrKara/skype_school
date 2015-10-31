@@ -29,7 +29,7 @@ THUMBNAIL_DEBUG = True
 #TEMPLATE_DEBUG = True
 #THUMBNAIL_DEBUG = True
 
-ALLOWED_HOSTS = ['skype_school.com.ua','127.0.0.1:8000','localhost:8000']
+ALLOWED_HOSTS = ['easy2learn.biz','127.0.0.1:8000','localhost:8000']
 
 SITE_ID = 2
 
@@ -42,16 +42,15 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'skype_school.fotos',
-	'skype_school.flatpages',
 	'sorl.thumbnail',
 	'django.contrib.sitemaps',
 	'django.contrib.sites',
-    'skype_school.mymenu',
-    'skype_school.articles',
     'disqus',
-	#'django_evolution',
 	'ckeditor',
+	'south',
+	'skype_school.mymenu',
+    'skype_school.articles',
+	'skype_school.flatpages',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -86,13 +85,15 @@ WSGI_APPLICATION = 'skype_school.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tatuazhkiev',
-		'USER': 'root',
-		'PASSWORD': 'TrustPoint85',
-		#'PASSWORD': '1111',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        #'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'skype_school',
+		'USER': 'postgres',
+		'PASSWORD': '1111',
+		#'PASSWORD': 'TrustPoint85',
 		'HOST': 'localhost',
-        'PORT': '3306',
+        #'PORT': '3306',
+		'PORT': '5432',
     }
 }
 
@@ -101,7 +102,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'ru-RU'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Kiev'
 
 USE_I18N = True
 

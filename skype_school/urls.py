@@ -6,8 +6,6 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib import admin
 from django.contrib.sitemaps import FlatPageSitemap, GenericSitemap
 from django.contrib.sitemaps.views import sitemap
-#from skype_school.sitemap import SitemapArticlesXML, StaticViewSitemap
-from skype_school.fotos.models import Foto
 from django.contrib.flatpages import views
 
 sitemaps = {
@@ -16,16 +14,10 @@ sitemaps = {
     #'static': StaticViewSitemap,
 }
 
-
 admin.autodiscover()
 
-
-urlpatterns = patterns('skype_school.views',
-    (r'^photo/$', 'photo_handler'),
-)
-
 #special for index.html
-urlpatterns += [
+urlpatterns = [
     url(r'^index.html/?$', views.flatpage, {'url': '/'}),
 ]
 
@@ -40,7 +32,7 @@ urlpatterns += patterns('',
     (r'^ckeditor/', include('ckeditor.urls')),
 )
 
-urlpatterns += patterns('skype_school.fotos.views',
+urlpatterns += patterns('',
     (r'^kontakti/$', 'kontakti_handler'),
 	(r'^contact/$', 'kontakti_handler'),
     (r'^thanks/$', 'thanks'),
